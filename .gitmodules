@@ -10,3 +10,9 @@
 [submodule "bundle/multiple-cursors"]
 	path = bundle/multiple-cursors
 	url = https://github.com/vimscript/multiple-cursors.git
+[submodule "bundle/clang-format"]
+	path = bundle/clang-format
+	url = https://github.com/rhysd/vim-clang-format.git
+[submodule "bundle/operator-user"]
+	path = bundle/operator-user
+	url = https://github.com/kana/vim-operator-user.git
