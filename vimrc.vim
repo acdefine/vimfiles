@@ -378,18 +378,3 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
-
-map <leader>fm :call CodeFormat()<cr>
-
-function! CodeFormat()
-	let lineNum = line('.')
-
-	if &filetype == 'c' || &filetype == 'cpp'
-		exec "%!astyle -A3t4xnxlxkLwYm1Upk1W1yOo"
-	else
-		echo "filetype <" . &filetype . "> NOT support."
-	endif
-	
-	exec lineNum
-endfunction
-
